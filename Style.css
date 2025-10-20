@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    padding-bottom: 150px;
+}
+
+.calculator-Container {
+    background-color: rgb(0, 0, 0);
+    margin: 150px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 145, 255);
+    gap: 20px;
+}
+
+.calculator-Container h1 {
+    color: white;
+    border-bottom: 2px solid rgb(0, 145, 255);
+}
+
+.Buttons button {
+    background-color: rgb(0, 145, 255);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    transition: transform 0.2s;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.Buttons button:hover {
+    transform: scale(1.05);
+    background-color: rgb(37, 158, 251);
+}
+
+.TextBox input {
+    background-color: rgb(27, 26, 26);
+    font-family: "Inter", sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+}
+
+.TextBox input::placeholder {
+    color: rgba(255, 255, 255, 0.495);
+}
+
+.TextBox input[type=number]::-webkit-inner-spin-button,
+.TextBox input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.TextBox input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.DisplayCalculatedRobux {
+    background-color: rgb(23, 23, 23);
+    width: 80%;
+    height: 200px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.DisplayCalculatedRobux h1 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.DisplayCalculatedRobux p {
+    padding: 30px;
+    font-size: 18px;
+}
+
+/* Footer container */
+.copyrightfooter {
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(37, 158, 251);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    padding-top: 20px ;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+
+.topFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.usefulLinks, .contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.usefulLinks h1, .contactInfo h1 {
+    margin-bottom: 10px;
+}
+
+.usefulLinks ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+.usefulLinks ul li {
+    margin-bottom: 5px;
+}
+
+.usefulLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.contactInfo h2 {
+    margin-bottom: 5px;
+}
+
+.copyTXT {
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.5;
+}
